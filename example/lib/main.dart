@@ -1,9 +1,6 @@
-import 'dart:typed_data';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:pag/pag.dart';
+import 'package:new_pag_flutter/pag.dart';
 
 void main() {
   runApp(MyApp());

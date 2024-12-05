@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -50,54 +51,54 @@ class PAGView extends StatefulWidget {
   static const int REPEAT_COUNT_DEFAULT = 1; //默认仅播放一次
 
   PAGView.network(
-    this.url, {
-    this.width,
-    this.height,
-    this.repeatCount = REPEAT_COUNT_DEFAULT,
-    this.initProgress = 0,
-    this.autoPlay = false,
-    this.onInit,
-    this.onAnimationStart,
-    this.onAnimationEnd,
-    this.onAnimationCancel,
-    this.onAnimationRepeat,
-    this.defaultBuilder,
-    Key? key,
-  }) : super(key: key);
+      this.url, {
+        this.width,
+        this.height,
+        this.repeatCount = REPEAT_COUNT_DEFAULT,
+        this.initProgress = 0,
+        this.autoPlay = false,
+        this.onInit,
+        this.onAnimationStart,
+        this.onAnimationEnd,
+        this.onAnimationCancel,
+        this.onAnimationRepeat,
+        this.defaultBuilder,
+        Key? key,
+      }) : super(key: key);
 
   PAGView.asset(
-    this.assetName, {
-    this.width,
-    this.height,
-    this.repeatCount = REPEAT_COUNT_DEFAULT,
-    this.initProgress = 0,
-    this.autoPlay = false,
-    this.package,
-    this.onInit,
-    this.onAnimationStart,
-    this.onAnimationEnd,
-    this.onAnimationCancel,
-    this.onAnimationRepeat,
-    this.defaultBuilder,
-    Key? key,
-  }) : super(key: key);
+      this.assetName, {
+        this.width,
+        this.height,
+        this.repeatCount = REPEAT_COUNT_DEFAULT,
+        this.initProgress = 0,
+        this.autoPlay = false,
+        this.package,
+        this.onInit,
+        this.onAnimationStart,
+        this.onAnimationEnd,
+        this.onAnimationCancel,
+        this.onAnimationRepeat,
+        this.defaultBuilder,
+        Key? key,
+      }) : super(key: key);
 
   PAGView.bytes(
-    this.bytesData, {
-    this.width,
-    this.height,
-    this.repeatCount = REPEAT_COUNT_DEFAULT,
-    this.initProgress = 0,
-    this.autoPlay = false,
-    this.package,
-    this.onInit,
-    this.onAnimationStart,
-    this.onAnimationEnd,
-    this.onAnimationCancel,
-    this.onAnimationRepeat,
-    this.defaultBuilder,
-    Key? key,
-  }) : super(key: key);
+      this.bytesData, {
+        this.width,
+        this.height,
+        this.repeatCount = REPEAT_COUNT_DEFAULT,
+        this.initProgress = 0,
+        this.autoPlay = false,
+        this.package,
+        this.onInit,
+        this.onAnimationStart,
+        this.onAnimationEnd,
+        this.onAnimationCancel,
+        this.onAnimationRepeat,
+        this.defaultBuilder,
+        Key? key,
+      }) : super(key: key);
 
   @override
   PAGViewState createState() => PAGViewState();
@@ -259,3 +260,4 @@ class PAGViewState extends State<PAGView> {
     callbackHandlers.remove(_textureId);
   }
 }
+
